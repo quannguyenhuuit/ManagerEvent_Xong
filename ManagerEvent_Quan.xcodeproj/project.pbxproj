@@ -14,6 +14,10 @@
 		360CAD021EB245670078D018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360CAD001EB245670078D018 /* LaunchScreen.storyboard */; };
 		360CAD0D1EB245670078D018 /* ManagerEvent_QuanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360CAD0C1EB245670078D018 /* ManagerEvent_QuanTests.swift */; };
 		360CAD181EB245670078D018 /* ManagerEvent_QuanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360CAD171EB245670078D018 /* ManagerEvent_QuanUITests.swift */; };
+		360CAD261EB246990078D018 /* ManagerEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360CAD251EB246990078D018 /* ManagerEventTableViewController.swift */; };
+		360CAD491EB25D3B0078D018 /* EventDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360CAD481EB25D3B0078D018 /* EventDetailTableViewController.swift */; };
+		360CAD4C1EB270850078D018 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360CAD4B1EB270850078D018 /* Event.swift */; };
+		360CAD4F1EB270A90078D018 /* EventLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360CAD4E1EB270A90078D018 /* EventLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		360CAD131EB245670078D018 /* ManagerEvent_QuanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManagerEvent_QuanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		360CAD171EB245670078D018 /* ManagerEvent_QuanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerEvent_QuanUITests.swift; sourceTree = "<group>"; };
 		360CAD191EB245670078D018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		360CAD251EB246990078D018 /* ManagerEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerEventTableViewController.swift; sourceTree = "<group>"; };
+		360CAD481EB25D3B0078D018 /* EventDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewController.swift; sourceTree = "<group>"; };
+		360CAD4B1EB270850078D018 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		360CAD4E1EB270A90078D018 /* EventLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,10 @@
 		360CACF61EB245670078D018 /* ManagerEvent_Quan */ = {
 			isa = PBXGroup;
 			children = (
+				360CAD501EB27B1B0078D018 /* View */,
+				360CAD4A1EB26FEC0078D018 /* Model */,
+				360CAD271EB246B10078D018 /* Controller */,
 				360CACF71EB245670078D018 /* AppDelegate.swift */,
-				360CACF91EB245670078D018 /* ViewController.swift */,
-				360CACFB1EB245670078D018 /* Main.storyboard */,
 				360CACFE1EB245670078D018 /* Assets.xcassets */,
 				360CAD001EB245670078D018 /* LaunchScreen.storyboard */,
 				360CAD031EB245670078D018 /* Info.plist */,
@@ -123,6 +132,33 @@
 				360CAD191EB245670078D018 /* Info.plist */,
 			);
 			path = ManagerEvent_QuanUITests;
+			sourceTree = "<group>";
+		};
+		360CAD271EB246B10078D018 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				360CACF91EB245670078D018 /* ViewController.swift */,
+				360CAD251EB246990078D018 /* ManagerEventTableViewController.swift */,
+				360CAD481EB25D3B0078D018 /* EventDetailTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		360CAD4A1EB26FEC0078D018 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				360CAD4B1EB270850078D018 /* Event.swift */,
+				360CAD4E1EB270A90078D018 /* EventLine.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		360CAD501EB27B1B0078D018 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				360CACFB1EB245670078D018 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				360CACFA1EB245670078D018 /* ViewController.swift in Sources */,
+				360CAD491EB25D3B0078D018 /* EventDetailTableViewController.swift in Sources */,
+				360CAD4F1EB270A90078D018 /* EventLine.swift in Sources */,
 				360CACF81EB245670078D018 /* AppDelegate.swift in Sources */,
+				360CAD261EB246990078D018 /* ManagerEventTableViewController.swift in Sources */,
+				360CAD4C1EB270850078D018 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
