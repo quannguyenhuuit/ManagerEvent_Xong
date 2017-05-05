@@ -29,6 +29,11 @@ class ManagerEventTableViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let eventLine = eventLines[section]
+        return eventLine.dates
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
